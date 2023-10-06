@@ -1,0 +1,12 @@
+server:
+  port: 8232
+
+spring:
+  application:
+    name: recommendationservice
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8061/eureka
