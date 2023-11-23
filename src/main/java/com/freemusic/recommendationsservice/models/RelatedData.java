@@ -1,5 +1,4 @@
-package com.freemusic.recommendationsservice.dataTypes;
-
+package com.freemusic.recommendationsservice.models;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -7,9 +6,11 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class ProductData {
+public class RelatedData {
+
+    private Integer userId;
 
     private Integer productId;
 
-    private String productName;
+    private Integer index;
 }

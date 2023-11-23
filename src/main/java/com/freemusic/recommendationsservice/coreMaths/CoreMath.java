@@ -1,6 +1,6 @@
 package com.freemusic.recommendationsservice.coreMaths;
 
-import com.freemusic.recommendationsservice.dataTypes.RelatedData;
+import com.freemusic.recommendationsservice.models.RelatedData;
 import com.google.common.collect.Lists;
 
 import java.util.*;

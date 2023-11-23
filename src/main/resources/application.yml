@@ -1,12 +1,23 @@
-server:
-  port: 8232
-
 spring:
   application:
-    name: recommendationservice
-  autoconfigure:
-    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+    name: recommendationsservice
+  datasource:
+    url: jdbc:mysql://localhost:55001/recommendations_service
+    username: root
+    password: mysqlpw
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
 eureka:
   client:
     service-url:
       defaultZone: http://127.0.0.1:8061/eureka
+server:
+  port: 8222
+
+
